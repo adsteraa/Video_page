@@ -3,9 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Watch New Video</title>
+
 <style>
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
+
 body{
   margin:0;
   min-height:100vh;
@@ -15,26 +20,34 @@ body{
   background:#111;
   font-family:Arial,sans-serif;
 }
+
 .container{
   width:94%;
   max-width:500px;
   text-align:center;
 }
+
 .card{
   background:#fff;
   padding:12px;
   border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
 }
+
 .girl{
   width:100%;
+  height:auto;
   display:block;
   border-radius:15px;
 }
+
 .title{
   font-size:25px;
   font-weight:700;
   margin:18px 0 12px;
+  color:#222;
 }
+
 .button{
   display:block;
   padding:16px;
@@ -45,20 +58,30 @@ body{
   font-size:18px;
   font-weight:bold;
 }
+
+.note{
+  font-size:12px;
+  color:#777;
+  margin-top:12px;
+}
 </style>
 </head>
 
 <body>
+
 <div class="container">
   <div class="card">
 
+    <!-- Upar banayi hui girl image -->
     <img
       class="girl"
-      src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85"
-      alt="Video preview"
+      src="promo.png"
+      alt="Watch New Video"
     >
 
-    <div class="title">Watch New Video</div>
+    <div class="title">
+      Watch New Video
+    </div>
 
     <a
       class="button"
@@ -69,7 +92,12 @@ body{
       WATCH NEW VIDEO
     </a>
 
+    <div class="note">
+      Tap the button to continue.
+    </div>
+
   </div>
 </div>
+
 </body>
 </html>

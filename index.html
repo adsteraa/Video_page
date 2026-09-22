@@ -1,140 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Watch New Video</title>
+  <title>Welcome</title>
+  <meta name="description" content="Welcome to our website. Continue to access the requested content.">
 
-<style>
-*{
-  box-sizing:border-box;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-body{
-  margin:0;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:#111;
-  font-family:Arial,sans-serif;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
 
-.container{
-  width:94%;
-  max-width:500px;
-  text-align:center;
-}
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 18px 20px;
+    }
 
-.card{
-  background:#fff;
-  padding:12px;
-  border-radius:20px;
-  box-shadow:0 10px 30px rgba(0,0,0,.35);
-}
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.girl{
-  width:100%;
-  height:auto;
-  display:block;
-  border-radius:15px;
-}
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+    }
 
-.title{
-  font-size:25px;
-  font-weight:700;
-  margin:18px 0 12px;
-  color:#222;
-}
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+      font-size: 14px;
+    }
 
-.button{
-  display:block;
-  padding:16px;
-  background:#e91e63;
-  color:#fff;
-  text-decoration:none;
-  border-radius:50px;
-  font-size:18px;
-  font-weight:bold;
-}
+    .hero {
+      max-width: 900px;
+      margin: 70px auto 40px;
+      padding: 20px;
+      text-align: center;
+    }
 
-.note{
-  font-size:12px;
-  color:#777;
-  margin-top:12px;
-}
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
 
-.ad-space{
-  margin:15px auto;
-  text-align:center;
-}
-</style>
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #666;
+      font-size: 17px;
+    }
+
+    .card-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 28px 22px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .icon {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .redirect-box {
+      max-width: 500px;
+      margin: 30px auto 70px;
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    }
+
+    .redirect-box h2 {
+      margin-bottom: 8px;
+    }
+
+    .redirect-box p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    #timer {
+      font-size: 40px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .continue-btn {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      margin-top: 5px;
+    }
+
+    footer {
+      background: #fff;
+      border-top: 1px solid #e8e8e8;
+      padding: 25px;
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        margin-top: 45px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .card-container {
+        grid-template-columns: 1fr;
+      }
+
+      .nav a {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
-  <div class="card">
+  <header>
+    <div class="nav">
+      <div class="logo">My Website</div>
 
-    <img
-      class="girl"
-      src="promo.png"
-      alt="Watch New Video"
-    >
+      <div>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+      </div>
+    </div>
+  </header>
 
-    <div class="title">
-      Watch New Video
+  <section class="hero" id="about">
+    <h1>Welcome to Our Website</h1>
+
+    <p>
+      Thanks for visiting. Explore our website and continue to the
+      requested content using the button below.
+    </p>
+  </section>
+
+  <section class="card-container" id="features">
+
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h3>Fast</h3>
+      <p>Quick and simple access to the content you are looking for.</p>
     </div>
 
-    <!-- Smartlink -->
+    <div class="card">
+      <div class="icon">🔒</div>
+      <h3>Simple</h3>
+      <p>A clean and straightforward browsing experience.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">✓</div>
+      <h3>Easy Access</h3>
+      <p>Continue whenever you are ready using the button below.</p>
+    </div>
+
+  </section>
+
+  <section class="redirect-box">
+
+    <h2>Continue</h2>
+
+    <p>
+      You will be redirected to the requested destination in:
+    </p>
+
+    <div id="timer">3</div>
+
     <a
-      class="button"
+      class="continue-btn"
       href="https://cowardrainbowactual.com/xmmi0epn5?key=ba4fa4b1d8d3ea8c2c68249a178f54ee"
-      target="_blank"
-      rel="noopener noreferrer"
     >
-      WATCH NEW VIDEO
+      Continue Now
     </a>
 
-    <div class="note">
-      Tap the button to continue.
-    </div>
+  </section>
 
-    <!-- 320x50 Banner -->
-    <div class="ad-space">
-      <script>
-        atOptions = {
-          'key' : '18c6330a105e8aeb706ca4bcd0106c0c',
-          'format' : 'iframe',
-          'height' : 50,
-          'width' : 320,
-          'params' : {}
-        };
-      </script>
+  <footer>
+    © 2026 My Website. All rights reserved.
+  </footer>
 
-      <script src="https://cowardrainbowactual.com/18c6330a105e8aeb706ca4bcd0106c0c/invoke.js"></script>
-    </div>
 
-    <!-- Native Banner -->
-    <div class="ad-space">
-      <script
-        async="async"
-        data-cfasync="false"
-        src="https://cowardrainbowactual.com/1919640e9a569ff0b976b83a5dfcd71e/invoke.js">
-      </script>
+  <script>
+    const destination =
+      "https://cowardrainbowactual.com/xmmi0epn5?key=ba4fa4b1d8d3ea8c2c68249a178f54ee";
 
-      <div id="container-1919640e9a569ff0b976b83a5dfcd71e"></div>
-    </div>
+    let seconds = 3;
 
-  </div>
-</div>
+    const timer = document.getElementById("timer");
 
-<!-- Popunder -->
-<script src="https://cowardrainbowactual.com/01/b9/49/01b949be218033d7a38b80141b3aef5b.js"></script>
+    const countdown = setInterval(function () {
 
-<!-- Social Bar -->
-<script src="https://cowardrainbowactual.com/5e/9f/e3/5e9fe35e346369b3ffeea8f313b0c4a3.js"></script>
+      seconds--;
+
+      if (seconds <= 0) {
+        clearInterval(countdown);
+        timer.textContent = "0";
+
+        window.location.href = destination;
+      } else {
+        timer.textContent = seconds;
+      }
+
+    }, 1000);
+  </script>
 
 </body>
 </html>
